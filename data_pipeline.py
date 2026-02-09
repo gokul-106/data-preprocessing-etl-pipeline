@@ -35,8 +35,8 @@ def save_data(df, output_path):
     df.to_csv(output_path, index=False)
 
 if __name__ == "__main__":
-    input_file = r"C:\Users\user\OneDrive\Desktop\DATA PIPELINE DEVELOPMENT\data\raw_data.csv" 
-    output_file = r"C:\Users\user\OneDrive\Desktop\DATA PIPELINE DEVELOPMENT\data\processed_data.csv"
+    input_file ="raw_data.csv"
+    output_file = "processed_data.csv"
 
     print("Loading data...")
     data = load_data(input_file)
@@ -47,4 +47,5 @@ if __name__ == "__main__":
     print("Saving processed data...")
     save_data(processed_data, output_file)
     
+
     print("ETL Pipeline Completed Successfully!")
